@@ -1,0 +1,17 @@
+package #package;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+#import
+
+public class #testClassName {
+    static public final String EMPTY = "";
+
+    @Before
+    public void setUp() throws Exception {
+    }
+    #testMethod
+
+}

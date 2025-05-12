@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <TestCode package="common.util" class ="StringUtilExt">
+         <importTxt>import java.util.Calendar;</importTxt>   
+         <importTxt>import java.util.Date;</importTxt>   
+    
+        <method methodName="isAscii"  isStatic="true"  returnTypeName="boolean"  testType="ng"  expected="false">
+            <param type="String" value="ＡＢＣＤＥ"></param> 
+        </method>
+        <method methodName="isAscii"  isStatic="true"  returnTypeName="boolean"  testType="ng"  expected="false">
+            <param type="String" value="@empty"></param>
+            <exception type="IllegalArgumentException" msg="パラメータがnullまたは空文字です。"></exception> 
+        </method>
+        <method methodName="isAscii"  isStatic="true"  returnTypeName="boolean"  testType="ok"  expected="true">
+            <param type="String" value="abcde"></param> 
+        </method>
+        <method methodName="cnvSeirekiToWareki"  isStatic="true"  returnTypeName="String"  testType="ok"  expected="明治01年10月12日">
+            <setparam>Calendar cal = Calendar.getInstance();</setparam>
+            <setparam>        cal.set(1868 ,9, 12);;</setparam>
+            
+            <param type="Date" value="cal.getTime()"></param> 
+
+        </method>
+    </TestCode>
+    <!-- 検索条件の定義 -->
+    <!-- 不要な検索項目（searchParameter）は、削除すること -->
+</root>

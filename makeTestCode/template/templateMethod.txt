@@ -1,0 +1,9 @@
+
+    @Test
+    public void #testMethodName(){
+        #mkinstance
+        #setParam
+        #paramDeclare
+        #invoke
+        #examine
+    }

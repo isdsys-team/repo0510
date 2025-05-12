@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>コメント</comment>
+<!--  <entry key="packageName">common.util</entry>
+<entry key="className">MathUtilExt</entry>
+-->
+<entry key="outputDir">output</entry>
+<entry key="testCodeConfigPath">xml/testCodeConfig2.xml</entry>
+</properties>
